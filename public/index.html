@@ -10,8 +10,15 @@ body  {
 </style>
   </head>
   <body>
-    <link rel="stylesheet" href="style.css" 
+    <link rel="stylesheet" href="style.css" />
+
+    <div class="container " >
+      <div class="row justify-centent-md-center">
+        <div class= "col-lg-12 mb-12">
+
+
     <div id="trucker">
+
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
@@ -20,10 +27,22 @@ body  {
       <input class="name" type="text" placeholder="Shipper name"/>
       <input class="distance" type="number" placeholder="Distance in km"/>
       <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-      <label class="form-check-label" for="exampleCheck1">Deductible Option</label>
+      
     </div>
-    
+ 
+    <div id="deductible">
+      <!--<label class="form-check-label" for="exampleCheck1">Deductible Option</label> -->
+      <input class="option" type="checkbox" placeholder="Deductible option"/>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Deductible Price
+  </button>
+</div>
+</div>
+ </div>
+</div>
+
+
+
     <button id="compute" class="btn btn-primary">Compute</button>
 
     <div id="actors"></div>
